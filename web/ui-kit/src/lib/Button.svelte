@@ -45,7 +45,3 @@
 <button type="button" class="{classes} font-semibold shadow-sm focis-visible:outline focus-visible:outline-2 focus-visible:outline-2 focus-visible:outline-offset-2">
     <slot>Button</slot>
 </button>
-
-<style lang="scss">
-    @import "stylesheet.css";
-</style>
