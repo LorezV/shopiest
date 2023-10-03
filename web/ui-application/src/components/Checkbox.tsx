@@ -6,9 +6,9 @@ interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
     type?: "checkbox"
 }
 
-export default forwardRef(({ label, description, ...inputProps }: CheckboxProps, ref: Ref<HTMLInputElement>) => {
+export default forwardRef(({ label, description, className, ...inputProps }: CheckboxProps, ref: Ref<HTMLInputElement>) => {
     return (
-        <label className="flex items-center gap-x-3 px-4 py-2 group">
+        <label className={["flex items-center gap-x-3 px-4 py-2 group", className].join(" ")}>
             <input className="hidden peer" type="checkbox" {...inputProps} ref={ref} />
 
             <div className="peer-checked:[&>div]:shadow-lg peer-checked:[&>div]:shadow-orange-100 peer-checked:[&>div]:bg-orange-400 peer-checked:[&>div>div]:bg-white peer-checked:[&>div>div]:translate-x-[1.5rem]">
