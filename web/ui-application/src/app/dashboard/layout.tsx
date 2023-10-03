@@ -32,6 +32,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 <main className="flex-1">
                     {children}
                 </main>
+
+                <footer className="p-5 flex items-center justify-between bg-white text-gray-400">
+                    <span>{(new Date()).getFullYear()} © Wellby.</span>
+                    <span>Design & Develop by Dmitriy Derkach</span>
+                </footer>
             </div>
         </div>
     )

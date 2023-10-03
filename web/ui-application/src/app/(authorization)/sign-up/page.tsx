@@ -7,7 +7,7 @@ export default function SignInPage() {
                 title: "Customer",
                 description: "You can open disputes, track your purchase history and follow updates.",
                 node: (
-                    <form className="flex flex-col gap-y-5">
+                    <form className="flex flex-col gap-y-5 mt-10">
                         <div className="flex gap-x-5">
                             <Input className="flex-1" placeholder="First name" />
                             <Input className="flex-1" placeholder="Last name" />
@@ -37,7 +37,7 @@ export default function SignInPage() {
                 title: "Seller",
                 description: "You can run your store, monitor products and get analytics.",
                 node: (
-                    <form className="flex flex-col gap-y-5">
+                    <form className="flex flex-col gap-y-5 mt-10">
                         <Input placeholder="Organization name" />
 
                         <Input placeholder="Email" />
